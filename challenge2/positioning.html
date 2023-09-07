@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Challenge 2 - CSS Positioning</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 1.1em;
+        background-color: #94d7e3;
+    }
+    h1 {
+        font-family: Futura, Helvetica, Arial, 'sans-serif';
+        margin-top: 0;
+        font-size: 50px;
+    }
+
+    .first-heading {
+        color: red;
+    }
+    #wrapper {
+        margin: 0 auto;
+        padding: 10px 30px;
+        width: 500px;
+        background-color: white;
+        height: 100%;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+    }
+    img {
+        border: 2px solid black;
+    }
+
+    #feature {
+        background-color: yellow;
+    }
+
+    .img-stack {
+        position: relative;
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        float: left;
+        width: 450px; 
+        height: 170px; 
+    }
+
+    p {
+        clear: both;
+    }
+
+    .top {
+        margin-left: 10px;
+        position: relative;
+    }
+
+    .bottom {
+        float: left;
+    }
+
+    .top-img {
+        transform: rotate(20deg); 
+        left: -80px;
+        position: relative;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <h1>Challenge 2:<br> CSS Positioning</h1>
+
+    <h2 class="first-heading">Farm Animals</h2>
+    <p>This challenge lab is full of fun surprises related to static, relative, absolute and fixed positioning and z-index! There are also cute little animals to admire.</p>
+    
+    <div class="img-stack">
+        <div class="bottom">
+        <img class="bottom-img" src="images/pig.png" alt="a cute little pig is smiling at you!">
+        </div>
+        <div class="top">
+        <img class="top-img" src="images/cow.png" alt="this cow doesn't look very happy">
+        </div>
+    </div>
+    
+    <p>Pigs are quite cute. I cut and paste lorem ipsum text so frequently that it's hard for me to think of anything to actually write off of the top of my head. Pigs make bacon. If you're vegetarian, veggie bacon isn't at all like the real thing.</p>
+    
+    <p>The cows in the image don't look very happy. I wonder what they're so upset about. Maybe they just don't like being in pictures. </p>
+
+    <div id="feature">
+        <h2>Other Farm Animals</h2>
+        <ul>
+            <li>ducks</li>
+            <li>pigs</li>
+            <li>cows</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
